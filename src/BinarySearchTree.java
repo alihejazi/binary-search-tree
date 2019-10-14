@@ -85,4 +85,24 @@ public class BinarySearchTree {
         }
     }
 
+    public static boolean searchForValue (Node root, int value) {
+        if (root == null) {
+            return false;
+        }
+
+        else {
+            if (root.value == value) {
+                return true;
+            }
+
+            if (value <= root.value) {
+                return searchForValue(root.leftChild, value);
+            }
+
+            else {
+                return searchForValue(root.rightChild, value);
+            }
+        }
+    }
+
 }
