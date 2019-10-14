@@ -7,10 +7,9 @@ public class Main {
         root = BinarySearchTree.addRecursively(root, 4);
 
         BinarySearchTree.inOrderTraverse(root);
-        BinarySearchTree.preOrderTraverse(root);
-        BinarySearchTree.postOrderTraverse(root);
 
         System.out.println(BinarySearchTree.searchForValue(root, 5));
+        System.out.println(BinarySearchTree.findLowestValue(root));
 
     }
 }

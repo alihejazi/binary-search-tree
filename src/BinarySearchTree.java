@@ -13,7 +13,6 @@ public class BinarySearchTree {
             Node currentNode = root;
 
             while (true) {
-
                 Node parent = currentNode;
 
                 if (value <= currentNode.value) {
@@ -23,7 +22,6 @@ public class BinarySearchTree {
                         parent.leftChild = nodeToBeAdded;
                         return root;
                     }
-
                 }
 
                 else if (value > currentNode.value) {
@@ -35,10 +33,8 @@ public class BinarySearchTree {
                     }
                 }
             }
-
         }
     }
-
 
 
     public static Node addRecursively (Node root, int value) {
@@ -85,6 +81,7 @@ public class BinarySearchTree {
         }
     }
 
+
     public static boolean searchForValue (Node root, int value) {
         if (root == null) {
             return false;
@@ -103,6 +100,24 @@ public class BinarySearchTree {
                 return searchForValue(root.rightChild, value);
             }
         }
+    }
+
+    public static Integer findLowestValue (Node root) {
+
+        if (root == null || root.value == null) {
+            return null;
+        }
+
+        else {
+            if (root.leftChild == null) {
+                return root.value;
+            }
+
+            else {
+                return findLowestValue(root.leftChild);
+            }
+        }
+
     }
 
 }
