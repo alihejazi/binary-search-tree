@@ -12,5 +12,7 @@ public class Main {
         root = BinarySearchTree.addIteratively(root, 4);
 
         BinarySearchTree.inOrderTraverse(root);
+        BinarySearchTree.preOrderTraverse(root);
+        BinarySearchTree.postOrderTraverse(root);
     }
 }
