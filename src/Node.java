@@ -1,11 +1,7 @@
 public class Node {
 
-    Integer value;
+    int value;
     Node leftChild, rightChild;
-
-    Node() {
-
-    }
 
     Node(int value) {
         this.value = value;

@@ -1,15 +1,18 @@
 public class Main {
     public static void main (String[] args) {
-        Node root = new Node();
 
-        root = BinarySearchTree.addRecursively(root, 5);
-        root = BinarySearchTree.addRecursively(root, 6);
-        root = BinarySearchTree.addRecursively(root, 4);
+        BinarySearchTree myBst = new BinarySearchTree();
+        myBst.root = myBst.addRecursively(myBst.root, 5);
+        myBst.root = myBst.addRecursively(myBst.root, 6);
+        myBst.root = myBst.addRecursively(myBst.root, 4);
 
-        BinarySearchTree.inOrderTraverse(root);
-
-        System.out.println(BinarySearchTree.searchForValue(root, 5));
-        System.out.println(BinarySearchTree.findLowestValue(root));
+        myBst.inOrderTraverse(myBst.root);
+        System.out.println(myBst.searchForValue(myBst.root, 5));
+        System.out.println(myBst.searchForValue(myBst.root, 6));
+        System.out.println(myBst.searchForValue(myBst.root, 4));
+        System.out.println(myBst.searchForValue(myBst.root, 3));
+        System.out.println(myBst.searchForValue(myBst.root, 8));
+        System.out.println(myBst.findLowestValue(myBst.root));
 
     }
 }
