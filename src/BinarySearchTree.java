@@ -104,7 +104,7 @@ public class BinarySearchTree {
         }
     }
 
-    public Integer findLowestValue (Node root) {
+    public int findLowestValue (Node root) {
 
         if (root == null) {
             return null;
