@@ -9,6 +9,6 @@ public class Node {
 
 
     public String toString() {
-        return "Node has value " + value + ".";
+        return "Node with value " + value + ".";
     }
 }

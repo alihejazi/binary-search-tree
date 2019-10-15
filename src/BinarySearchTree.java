@@ -56,6 +56,53 @@ public class BinarySearchTree {
         return root;
     }
 
+    public Node deleteRecursively (Node root, int value) {
+        if (root == null) {
+            return null;
+        }
+
+        else {
+            if (value == root.value) {
+                //case 1 leaf node
+                if (root.leftChild == null && root.rightChild == null) {
+                    root = null;
+                }
+
+                //case 2.1 only left child
+                else if (root.leftChild != null && root.rightChild == null) {
+                    root = root.leftChild;
+                }
+
+                //case 2.2 or only right child
+                else if (root.leftChild == null && root.rightChild != null) {
+                    root = root.rightChild;
+                }
+
+                //case 3 two children
+                else {
+                    //find right-most node in left subtree, i.e. highest node in left subtree
+                    int swapValue = findHighestValue(root.leftChild);
+
+                    //delete the swapValue node from it's original position
+                    deleteRecursively(root, swapValue);
+
+                    //change the root.value to the swapValue
+                    root.value = swapValue;
+                }
+            }
+
+            else if (value < root.value) {
+                root.leftChild = deleteRecursively(root.leftChild, value);
+            }
+
+            else {
+                root.rightChild = deleteRecursively(root.rightChild, value);
+            }
+
+            return root;
+        }
+    }
+
 
     public void inOrderTraverse (Node root) {
         if (root != null) {

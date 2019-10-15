@@ -15,5 +15,8 @@ public class Main {
         System.out.println(myBst.findLowestValue(myBst.root));
         System.out.println(myBst.findHighestValue(myBst.root));
 
+        System.out.println("Deleting 5");
+        myBst.root = myBst.deleteRecursively(myBst.root, 5);
+        myBst.inOrderTraverse(myBst.root);
     }
 }

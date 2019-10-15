@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="92480b5e-e04b-435f-82b6-0bb5eebedb04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/binary-search-tree/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/binary-search-tree/BinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/binary-search-tree/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/binary-search-tree/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/binary-search-tree/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/binary-search-tree/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
