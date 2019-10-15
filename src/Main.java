@@ -13,6 +13,7 @@ public class Main {
         System.out.println(myBst.searchForValue(myBst.root, 3));
         System.out.println(myBst.searchForValue(myBst.root, 8));
         System.out.println(myBst.findLowestValue(myBst.root));
+        System.out.println(myBst.findHighestValue(myBst.root));
 
     }
 }

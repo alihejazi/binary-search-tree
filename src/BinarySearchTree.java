@@ -122,4 +122,21 @@ public class BinarySearchTree {
 
     }
 
+
+    public Integer findHighestValue (Node root) {
+        if (root == null) {
+            return null;
+        }
+
+        else {
+            if (root.rightChild == null) {
+                return root.value;
+            }
+
+            else {
+                return (findHighestValue(root.rightChild));
+            }
+        }
+    }
+
 }
